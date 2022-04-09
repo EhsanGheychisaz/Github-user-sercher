@@ -7,9 +7,17 @@ var cc = "";
 document.querySelector("#button2").addEventListener("click", function () {
   var aa = document.querySelector(".body_input").value;
   console.log(aa);
-  cc = bb + aa;
-  console.log(cc);
+  if (aa != "") {
+    cc = bb + aa;
+  } else {
+    document.querySelector(".massage11").style.transform = "translateY(40rem)";
+    const error0 = setTimeout(function () {
+      document.querySelector(".massage11").style.transform =
+        "translateY(-40rem)";
+    }, 6000);
+  }
 });
+console.log(cc);
 function getText() {
   fetch(`${cc}`)
     .then((response) => response.json())
@@ -17,7 +25,11 @@ function getText() {
       var adf = data.id;
       console.log(data);
       if (data.message === "Not Found") {
-        alert("you write nothing in input or you give us a incorrect username");
+        var erorrborder = document.querySelector(".massage22");
+        erorrborder.style.transform = "translateY(-45rem)";
+        const error = setTimeout(function () {
+          erorrborder.style.transform = "translateY(+45rem)";
+        }, 6000);
       } else {
         document.querySelector(".card__img").src = data.avatar_url;
         document.querySelector(".card__header-text1").innerHTML = data.name;
