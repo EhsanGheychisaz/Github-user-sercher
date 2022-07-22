@@ -1,2 +1,2 @@
 # git-fetch--request
-create by ehsan
+a simple project to learn how work with Bootstrap and jquery

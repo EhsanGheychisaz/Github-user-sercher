@@ -5,72 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Git User Finding</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="/Git-Icon-Black.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
-    />
-    <link rel="stylesheet" href="/style/text.css" />
     <script
       src="https://kit.fontawesome.com/b085ac68bd.js"
       crossorigin="anonymous"
     ></script>
-    <title>Ajax Sandbox</title>
   </head>
-  <body>
-    <div class="massage11">input box is empty</div>
-    <div class="massage22">the username isn't correct</div>
-    <div class="container">
+  <body class="bg-primary p-0 m-0">
+    <div id="massage11" class="btn  btn-outline-danger">input box is empty</div>
+    <div id="massage22" class="btn   btn-outline-danger">the username isn't correct</div>
+    <div id="hero" class="z-index-90 bg-light p-5">
       <i id="git__icon" class="fa-brands fa-github fa-4x"></i>
-      <div class="container__header">
+      <div id="hero__header" class="container">
         <h1>Git Api User</h1>
-        <div class="container__input">
-          <form action="">
-            <label for="user">username : </label>
-            <input class="body_input" type="text" /> <br /><br />
-          </form>
+        <div id="hero__input" class="container">
+          <div class="input-group mb-3">
+            <span class="btn btn-outline-secondary disabled" id="button-addon1">username  </span>
+            <input type="text" id="body_input" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+          </div>
           <br /><br />
           <div id="output"></div>
         </div>
       </div>
-      <div class="buttons">
-        <button id="button2">Get</button>
-        <button id="button1">Show Data</button>
+      <div class="container">
+      <div class="row">
+        <button id="button2" class="col btn btn-info m-1 text-light">Get</button>
+        <button id="button1" class="col btn btn-info m-1 text-light">Show Data</button>
       </div>
-      <div class="body__data-card">
-        <div class="card__header">
-          <div>
-            <img class="card__img" src="" alt="" width="170px" height="150px" />
-          </div>
-          <div class="card__header-text">
-            <div>
-              <h3 class="card__header-text1"></h3>
-            </div>
-            <div>
-              <h5 class="card__header-text2">
-                id:
-                <div class="card__header-text22"></div>
-              </h5>
-            </div>
-          </div>
-        </div>
-        <div class="card__main-reposy">
-          repository:
-          <div class="card__main-reposyy"></div>
-        </div>
-        <div class="card__main-follow">
-          <div class="card__main-following">
-            following:
-            <div class="card__main-followingg"></div>
-          </div>
-          <div class="card__main-followers">
-            followes:
-            <div class="card__main-followerss"></div>
-          </div>
-          <div></div>
-        </div>
       </div>
+      </div>
+      <div class="bg-dark" id="modal__bg"></div>
+      <div id="body__data-card" class="container z-index-2000">
+        <div id="card__header" class="row">
+          <div class="col">
+            <img id="card__img" class="rounded-circle" src="" alt="" width="170px" height="150px" />
+          </div>
+          <div class="col"><h3 class="card__header-text1">name:</h3></div>
+          </div>   
+        <div id="card__main-reposy" class=" container">
+         <div class="row">
+          <div id="card__main-reposyy" class="col"> repository:</div>
+            <div id="card__main-followingg" class="col">following:</div>
+            <div id="card__main-followerss" class="col">followes:</div>
+          </div>
+        </div>
     </div>
-    <script src="/js/app.js"></script>
+    <script src="./js/sample.js"></script>
   </body>
 </html>

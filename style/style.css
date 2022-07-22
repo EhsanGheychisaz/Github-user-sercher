@@ -1,0 +1,53 @@
+body {
+  overflow: hidden;
+}
+
+#hero {
+  border-radius: 1rem;
+  margin: 10% 15%;
+}
+
+#body__data-card {
+  background-color: gray;
+  position: absolute;
+  bottom: 20%;
+  left: 20%;
+  right: 20%;
+  width: 60%;
+  height: 40%;
+  border-radius: 1rem;
+  visibility: hidden;
+}
+
+#modal__bg {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 1500px;
+  height: 700px;
+  opacity: 30%;
+  z-index: 70;
+}
+
+#git__icon {
+  transition: 1s;
+}
+
+#git__icon:hover {
+  transform: rotateY(360deg);
+}
+
+#massage11 {
+  position: absolute;
+  top: -50%;
+  transition: 1s ease;
+}
+
+#massage22 {
+  position: absolute;
+  top: -50%;
+  transition: 1s ease;
+}
+
+/*# sourceMappingURL=style.css.map */
